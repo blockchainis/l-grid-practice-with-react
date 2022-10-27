@@ -5,7 +5,7 @@ const NFTListWrapper = styled.div`
   margin-top: 21px;
   display: grid;
   gap: 16px;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   padding-bottom: 20px;
   width: 100%;
   margin: 0px 20px;

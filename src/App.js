@@ -10,14 +10,14 @@ function App() {
       <Container>
         <Header>
           <Logo>NFTSeas</Logo>
-          <SearchBar>
-            <Icon>
-              <SearchIcon />
-            </Icon>
-            <Input />
-          </SearchBar>
         </Header>
         <Main>
+          <SearchBar>
+            <IconWrapper>
+              <SearchIcon />
+            </IconWrapper>
+            <Input />
+          </SearchBar>
           <NFTList />
         </Main>
       </Container>
@@ -47,17 +47,18 @@ const Logo = styled.h1`
 `;
 
 const Input = styled.input`
-  margin-top: 4px;
-  width: auto;
-  height: 27px;
   border: none;
-  margin-left: 27px;
+  width: auto;
+  height: 90%;
+  width: 100%;
+  margin-left: 50px;
   font-weight: 400;
   font-size: 20px;
 `;
+
 const SearchBar = styled.div`
-  margin-top: 10px;
-  width: 600px;
+  margin-bottom: 50px;
+  width: calc(100% - 40px);
   height: 50px;
   display: flex;
   align-items: center;
@@ -66,15 +67,16 @@ const SearchBar = styled.div`
   position: relative;
 `;
 
-const Icon = styled.div`
-  margin-left: 12px;
+const IconWrapper = styled.div`
+  left: 12px;
+  position: absolute;
 `;
 
 const Main = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 30px;
   width: 100%;
   max-width: 800px;
   padding: 0px 30px;

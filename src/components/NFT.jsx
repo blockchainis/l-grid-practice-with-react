@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 const NFTWrapper = styled.div`
-  height: 480px;
+  height: 350px;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0px 4px 15px 0px #00000040;
 `;
 const NFTImage = styled.div`
-  height: 297px;
+  height: 200px;
 `;
 const NFTDetail = styled.div`
   height: 150px;

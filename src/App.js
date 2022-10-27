@@ -2,7 +2,6 @@ import GlobalStyle from "./GlobalStyle";
 import styled from "styled-components";
 import SearchIcon from "./components/SearchIcon";
 import NFTList from "./components/NFTList";
-import SortButtons from "./components/SortButtons";
 function App() {
   return (
     <>
@@ -19,7 +18,6 @@ function App() {
           </SearchBar>
         </Header>
         <Main>
-          <SortButtons />
           <NFTList />
         </Main>
       </Container>
@@ -33,7 +31,7 @@ const Container = styled.div`
   align-items: center;
   font-family: "Inter", sans-serif;
   flex-direction: column;
-  padding-top: 50px;
+  padding: 50px 20px 0px 20px;
 `;
 
 const Header = styled.header`
@@ -76,7 +74,10 @@ const Main = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 152px;
+  margin-top: 100px;
+  width: 100%;
+  max-width: 800px;
+  padding: 0px 30px;
 `;
 
 export default App;

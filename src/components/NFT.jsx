@@ -6,9 +6,12 @@ const NFTWrapper = styled.div`
   overflow: hidden;
   box-shadow: 0px 4px 15px 0px #00000040;
 `;
-const NFTImage = styled.div`
+
+const ColorBox = styled.div`
   height: 200px;
+  background-color: #758ead;
 `;
+
 const NFTDetailWrapper = styled.div`
   height: 130px;
   background-color: white;
@@ -27,10 +30,7 @@ const BoldText = styled.p`
 function NFT() {
   return (
     <NFTWrapper>
-      <NFTImage
-        className="nft__color"
-        style={{ backgroundColor: "#758ead" }}
-      ></NFTImage>
+      <ColorBox />
       <NFTDetailWrapper>
         <TextsBox>
           <BoldText>NFT</BoldText>

@@ -9,7 +9,7 @@ const NFTWrapper = styled.div`
 
 const ColorBox = styled.div``;
 
-const NFTDetailWrapper = styled.div``;
+const DetailBox = styled.div``;
 
 const TextsBox = styled.div``;
 
@@ -19,7 +19,7 @@ function NFT() {
   return (
     <NFTWrapper>
       <ColorBox />
-      <NFTDetailWrapper>
+      <DetailBox>
         <TextsBox>
           <BoldText>NFT</BoldText>
           <p>Dog 15</p>
@@ -28,7 +28,7 @@ function NFT() {
           <BoldText>Price</BoldText>
           <p>0.101 Ether</p>
         </TextsBox>
-      </NFTDetailWrapper>
+      </DetailBox>
     </NFTWrapper>
   );
 }

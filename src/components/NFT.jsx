@@ -9,28 +9,19 @@ const NFTWrapper = styled.div`
 const NFTImage = styled.div`
   height: 200px;
 `;
-const NFTDetail = styled.div`
-  height: 150px;
+const NFTDetailWrapper = styled.div`
+  height: 130px;
   background-color: white;
   padding: 10px;
 `;
-const NFTName = styled.div`
-  margin-bottom: 19px;
-  & > p:first-child {
-    margin-bottom: 6px;
-    font-weight: 800;
-  }
 
-  & > p:last-child {
-    margin-bottom: 6px;
-  }
+const TextsBox = styled.div`
+  margin-bottom: 19px;
 `;
 
-const NFTPrice = styled.div`
-  & > p:first-child {
-    margin-bottom: 6px;
-    font-weight: 800;
-  }
+const BoldText = styled.p`
+  margin-bottom: 6px;
+  font-weight: 800;
 `;
 
 function NFT() {
@@ -40,16 +31,16 @@ function NFT() {
         className="nft__color"
         style={{ backgroundColor: "#758ead" }}
       ></NFTImage>
-      <NFTDetail>
-        <NFTName>
-          <p>NFT</p>
+      <NFTDetailWrapper>
+        <TextsBox>
+          <BoldText>NFT</BoldText>
           <p>Dog 15</p>
-        </NFTName>
-        <NFTPrice>
-          <p>Price</p>
-          <p>0.101 Either</p>
-        </NFTPrice>
-      </NFTDetail>
+        </TextsBox>
+        <TextsBox>
+          <BoldText>Price</BoldText>
+          <p>0.101 Ether</p>
+        </TextsBox>
+      </NFTDetailWrapper>
     </NFTWrapper>
   );
 }

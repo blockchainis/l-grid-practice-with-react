@@ -7,13 +7,26 @@ const NFTWrapper = styled.div`
   box-shadow: 0px 4px 15px 0px #00000040;
 `;
 
-const ColorBox = styled.div``;
+const ColorBox = styled.div`
+  height: 200px;
+  background-color: #758ead;
+`;
 
-const DetailBox = styled.div``;
+const DetailBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 
-const TextsBox = styled.div``;
+const TextsBox = styled.div`
+  width: 90%;
+  margin-top: 20px;
+`;
 
-const BoldText = styled.p``;
+const BoldText = styled.p`
+  font-weight: 700;
+  margin-bottom: 7.5px;
+`;
 
 function NFT() {
   return (
